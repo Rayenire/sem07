@@ -3,9 +3,9 @@
 int[ ] array = new int[10];
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = new Random().Next(-100, 101);
-    Console.Write(array[i] + " ");
+    array[i] = Convert.ToInt32(Console.ReadLine());       
 }
+
 
 int count = 0; 
 for (int i = 0; i < array.Length; i++)
@@ -14,6 +14,7 @@ for (int i = 0; i < array.Length; i++)
     {
         count++;
     }
+    Console.Write(array[i] + " ");
 }
 
 Console.WriteLine(); 
